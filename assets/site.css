@@ -29,8 +29,7 @@ p{margin:0}
 .mark i.k{background:var(--secondary)}
 .wordmark{font-weight:800;font-size:23px;letter-spacing:-0.02em;white-space:nowrap}
 .wm-the{font-weight:400;color:var(--muted)}
-.wm-co{color:var(--secondary)}
-.wm-acc{color:var(--primary)}
+.wm-amp{color:var(--secondary);font-weight:600}
 .site-nav{display:flex;align-items:center;gap:30px;font-size:15px;font-weight:500}
 .site-nav a{color:var(--ink);text-decoration:none}
 .site-nav a:hover,.site-nav a[aria-current="page"]{color:var(--primary)}
