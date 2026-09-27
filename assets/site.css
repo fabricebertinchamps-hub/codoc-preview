@@ -629,3 +629,14 @@ a.case:hover,a.case:focus-visible,.case[role="button"]:hover,.case[role="button"
 .pills a:hover{text-decoration:none!important}
 @media (max-width:960px){.pills li:nth-child(odd){margin-right:0}}
 @media (prefers-reduced-motion:reduce){.case,.contact-card,.pills a{transition:none}}
+
+/* header lock-up: monogram, gold rule, stacked wordmark (as on the card) */
+.logo{display:flex;align-items:center;gap:18px}
+.hdr-mono{display:block;height:68px;width:auto;color:var(--espresso);flex:0 0 auto}
+.logo-rule{display:block;width:1px;height:52px;background:var(--gold)}
+@media (max-width:620px){
+  .hdr-mono{height:54px}
+  .logo{gap:12px}
+  .logo-rule{height:40px}
+  .lockup{height:46px}
+}
