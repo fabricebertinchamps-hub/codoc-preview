@@ -646,3 +646,9 @@ a.case:hover,a.case:focus-visible,.case[role="button"]:hover,.case[role="button"
 .page-head h1{font-size:clamp(30px,3.1vw,44px);line-height:1.15;letter-spacing:-.005em;max-width:24ch}
 .page-head .lead{font-size:17px}
 @media (max-width:620px){.page-head h1{font-size:28px}}
+
+/* quote cards ("In his words", dialogs): quiet, readable */
+.quote.quote-sm{display:block;padding:24px 26px;border:0;border-top:1px solid var(--gold);background:var(--ivory)}
+.quote.quote-sm blockquote{font-size:19px;line-height:1.45;font-style:italic;letter-spacing:0}
+.quote.quote-sm figcaption{margin-top:12px;font-size:11.5px;letter-spacing:.08em;color:var(--muted)}
+.quotes{gap:20px}
