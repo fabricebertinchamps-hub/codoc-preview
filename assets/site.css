@@ -601,3 +601,31 @@ h1,h2,h3,.creds dt,.contact-value,.timeline .when,.leader-body .leader-creds,.pe
   .footer-base{flex-direction:column}
 }
 @media (prefers-reduced-motion:reduce){*,*::backdrop{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+
+/* ================= one hover language for every clickable block ================= */
+.case,.case-p,.case-b,.case-n,.contact-card,.contact-card.cc-s,.contact-card.cc-p{background:var(--ivory);color:var(--espresso);box-shadow:none;transform:none;transition:background-color .2s ease,color .2s ease,border-color .2s ease}
+.contact-card,.contact-card.cc-s,.contact-card.cc-p{border:1px solid var(--line);border-top:2px solid var(--espresso)}
+.contact-card .kicker,.contact-card.cc-s .kicker{color:var(--muted)}
+.case .case-tag,.case .case-firm,.case .case-text,.case .case-name,.case .case-open,.contact-card .kicker,.contact-card .contact-value{transition:color .2s ease}
+/* hover / keyboard focus: identical everywhere */
+a.case:hover,a.case:focus-visible,.case[role="button"]:hover,.case[role="button"]:focus-visible,button.case:hover,button.case:focus-visible,
+.case:not(.case-static):hover,.case:not(.case-static):focus-visible,
+.contact-card:not(.static):hover,.contact-card:not(.static):focus-visible,
+.pills a:hover,.pills a:focus-visible{background:var(--espresso)!important;color:var(--parchment)!important;box-shadow:none!important;transform:none!important;border-color:var(--espresso)}
+.case:not(.case-static):hover *,.case:not(.case-static):focus-visible *,
+.contact-card:not(.static):hover *,.contact-card:not(.static):focus-visible *{color:var(--parchment)!important}
+.case:not(.case-static):hover .case-tag,.case:not(.case-static):hover .case-firm,
+.case:not(.case-static):focus-visible .case-tag,.case:not(.case-static):focus-visible .case-firm,
+.contact-card:not(.static):hover .kicker{color:#CDB894!important}
+.case:hover .case-open,.case:focus-visible .case-open{text-decoration:none}
+.case:hover .case-open span,.case:hover .case-open span:after{transform:none}
+/* static blocks never react */
+.case-static:hover,.case-static:focus-visible,.contact-card.static:hover{background:var(--ivory)!important;color:var(--espresso)!important}
+.case-static:hover *{color:inherit}
+/* jurisdiction list rows behave like the blocks */
+.pills a{padding:14px 12px;margin-right:0!important;transition:background-color .2s ease,color .2s ease}
+.pills li:nth-child(odd){margin-right:28px}
+.pills a:hover:after,.pills a:focus-visible:after{color:var(--parchment)}
+.pills a:hover{text-decoration:none!important}
+@media (max-width:960px){.pills li:nth-child(odd){margin-right:0}}
+@media (prefers-reduced-motion:reduce){.case,.contact-card,.pills a{transition:none}}
