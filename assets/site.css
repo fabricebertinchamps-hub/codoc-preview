@@ -646,3 +646,9 @@ a.case:hover,a.case:focus-visible,.case[role="button"]:hover,.case[role="button"
 .quote.quote-sm blockquote{font-size:19px;line-height:1.45;font-style:italic;letter-spacing:0}
 .quote.quote-sm figcaption{margin-top:12px;font-size:11.5px;letter-spacing:.08em;color:var(--muted)}
 .quotes{gap:20px}
+
+/* one Arabic line per page, same placement everywhere */
+.page-head .wrap{gap:0}
+.page-head .hero-top{margin-bottom:clamp(24px,3vw,40px)}
+.page-head .hero-top .eyebrow{margin:0}
+.page-head h1{margin-bottom:20px}
